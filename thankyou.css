@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  /* Dark background based on screenshot */
+  background: #040810;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.thankyouthemes-card {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyouthemes-card .success-title {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #0ed3cf;
+  /* Bright cyan/teal color from screenshot */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.thankyouthemes-card .success-message {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+}
+
+.whatsapp-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(to right, #ac2be6 0%, #1e6df9 100%);
+  border-radius: 60px;
+  padding: 25px 40px;
+  color: white;
+  width: auto;
+  margin: 10px auto 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(30, 109, 249, 0.15);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(30, 109, 249, 0.3);
+}
+
+.btn-main-text {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.btn-sub-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sub-text {
+  font-size: 16px;
+  color: #0ed3cf;
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    min-width: unset;
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .thankyouthemes-card h1 {
+    font-size: 20px;
+  }
+
+  .btn-main-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-sub-text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
